@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "evandro-lisboa-mkt",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
