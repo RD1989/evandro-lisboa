@@ -381,41 +381,47 @@
 
     <!-- FORM SECTION AGENCY -->
     <section id="contato" class="section-padding bg-white">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="bg-slate-50 border border-slate-200 rounded-[32px] overflow-hidden shadow-2xl flex flex-col md:flex-row" data-aos="fade-up">
-                <div class="w-full md:w-5/12 bg-slate-900 p-16 text-white flex flex-col justify-between">
-                    <div>
-                        <h2 class="text-4xl font-extrabold mb-8 text-white">Diagnóstico Estratégico</h2>
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="bg-slate-50 border border-slate-200 rounded-[48px] overflow-hidden shadow-2xl flex flex-col md:flex-row" data-aos="fade-up">
+                <div class="w-full md:w-5/12 bg-slate-900 p-16 md:p-24 text-white flex flex-col justify-between relative overflow-hidden">
+                    <!-- Subtle Tech Background Effect -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-extrabold mb-8 text-white leading-tight">Diagnóstico <br>Estratégico</h2>
                         <p class="text-slate-400 mb-12 text-lg leading-relaxed">Avaliação completa da sua presença digital e identificação imediata de gargalos de faturamento.</p>
                         <ul class="space-y-6 text-sm font-bold uppercase tracking-widest text-slate-400">
-                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500"></i> Gestão de Tráfego ROI</li>
-                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500"></i> Branding & Posicionamento</li>
-                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500"></i> Infraestrutura Google</li>
+                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500 text-xl"></i> Gestão de Tráfego ROI</li>
+                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500 text-xl"></i> Branding & Posicionamento</li>
+                            <li class="flex items-center gap-6"><i class="fas fa-check-circle text-blue-500 text-xl"></i> Infraestrutura Google</li>
                         </ul>
                     </div>
                 </div>
-                <div class="w-full md:w-7/12 p-12 md:p-16">
-                    <form id="waForm" class="space-y-8">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Nome Completo</label>
-                            <input class="w-full bg-white border border-slate-200 rounded-xl px-6 py-4 focus:border-blue-700 transition outline-none text-slate-800 text-lg" id="name" type="text" placeholder="Seu nome" required>
+                <div class="w-full md:w-7/12 p-12 md:p-24 bg-white">
+                    <div class="mb-10">
+                        <span class="text-blue-700 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Inicie seu Processo</span>
+                        <h3 class="text-3xl font-bold text-slate-900">Preencha os Dados Abaixo</h3>
+                    </div>
+                    <form id="waForm" class="space-y-10">
+                        <div class="group">
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 group-focus-within:text-blue-700 transition-colors">Nome Completo</label>
+                            <input class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-8 py-6 focus:border-blue-700 focus:bg-white focus:ring-4 focus:ring-blue-500/5 transition-all outline-none text-slate-800 text-lg shadow-sm" id="name" type="text" placeholder="Como devemos te chamar?" required>
                         </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Empresa</label>
-                            <input class="w-full bg-white border border-slate-200 rounded-xl px-6 py-4 focus:border-blue-700 transition outline-none text-slate-800 text-lg" id="company" type="text" placeholder="Nome da empresa" required>
+                        <div class="group">
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 group-focus-within:text-blue-700 transition-colors">Nome da Empresa</label>
+                            <input class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-8 py-6 focus:border-blue-700 focus:bg-white focus:ring-4 focus:ring-blue-500/5 transition-all outline-none text-slate-800 text-lg shadow-sm" id="company" type="text" placeholder="Qual o nome do seu negócio?" required>
                         </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Desafio Principal</label>
-                            <select class="w-full bg-white border border-slate-200 rounded-xl px-6 py-4 focus:border-blue-700 transition outline-none text-slate-500 text-lg cursor-pointer" id="challenge" required>
-                                <option value="" disabled selected>O que sua empresa precisa hoje?</option>
-                                <option value="Escala de Vendas">Escala de Vendas / Tráfego</option>
-                                <option value="Autoridade Visual">Autoridade Visual / Branding</option>
-                                <option value="Imagens de Drone">Imagens Cinematográficas / Drone</option>
-                                <option value="Consultoria Estratégica">Consultoria Estratégica / INPI</option>
+                        <div class="group">
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 group-focus-within:text-blue-700 transition-colors">Qual seu desafio hoje?</label>
+                            <select class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-8 py-6 focus:border-blue-700 focus:bg-white focus:ring-4 focus:ring-blue-500/5 transition-all outline-none text-slate-500 text-lg cursor-pointer shadow-sm" id="challenge" required>
+                                <option value="" disabled selected>O que sua empresa precisa?</option>
+                                <option value="Escala de Vendas">Escala de Vendas / Tráfego Especializado</option>
+                                <option value="Autoridade Visual">Autoridade Visual / Branding de Elite</option>
+                                <option value="Imagens de Drone">Imagens Cinematográficas / Drone Profissional</option>
+                                <option value="Consultoria Estratégica">Consultoria Estratégica / Gestão INPI</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full btn-agency py-6 rounded-xl text-xl flex items-center justify-center gap-4">
-                            <i class="fab fa-whatsapp"></i> Solicitar Diagnóstico Agora
+                        <button type="submit" class="w-full btn-agency py-8 rounded-2xl text-xl flex items-center justify-center gap-4 group transition-all">
+                            <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i> Enviar Diagnóstico Magistral
                         </button>
                     </form>
                 </div>
